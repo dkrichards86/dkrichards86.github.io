@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "My Journey part 1 - The Beginning (pre-2005)"
-image: /assets/images/dkrichards_square.jpg
 description: >-
     Learn more about my shit.
 ---

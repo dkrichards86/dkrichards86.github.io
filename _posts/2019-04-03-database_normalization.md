@@ -2,7 +2,6 @@
 layout: post
 author: dkrichards86
 title: Database Normalization and You
-image: /assets/images/dkrichards_square.jpg
 description:  >-
     Database normalization is the process of breaking related data into discrete,
     maintainable sections. In this article, I will explain normalization through
