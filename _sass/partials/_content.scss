@@ -88,15 +88,20 @@ ul.post-list {
     justify-content: space-between;
     align-items: center;
     
-    @include media-query($on-mobile) {
-        display: block;
-    }
-    
     a.with-icon {
         display: flex;
         text-decoration: none;
         align-items: center;
     }
+    
+    // @include media-query($on-mobile) {
+    //     display: block;
+        
+    //     a.with-icon {
+    //         display: block;
+    //         text-align: center;
+    //     }
+    // }
 }
 
 .social-links {
