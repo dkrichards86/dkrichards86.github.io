@@ -1,0 +1,16 @@
+html, body, div, span, h1, p, a, article, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, header, nav {
+	display: block;
+}
+
+p {
+  margin: 12px 0;
+}

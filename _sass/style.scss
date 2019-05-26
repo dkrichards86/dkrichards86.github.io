@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+$primary-color: #0278b8;
+$content-color: #FFFFFF;
+$background-color: #F0F0F0;
+$font-color: #454545;
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+
+$box-shadow: 0 2px 8px rgba(0,0,0,.25);
+$border: 1px solid $grey-color-light;
+
+$on-mobile: 600px;
+$on-tablet: 800px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@import
+    "partials/reset",
+    "partials/layout",
+    "partials/header",
+    "partials/nav",
+    "partials/content",
+    "partials/syntax-highlighting"
+;

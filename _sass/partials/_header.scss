@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: $primary-color;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 32px;
+
+    @include media-query($on-tablet) {
+        text-align: center;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $content-color;
+    }
+    
+    .headline {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        vertical-align: middle;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &.shrunk {
+        height: 48px;
+        line-height: 48px;
+    }
+
+    @include media-query($on-mobile) {
+        box-shadow: $box-shadow;
+    }    
+}

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article>
+    <div class="content-core">
+        <h1>
+          Recent Articles
+        </h1>
+        <hr />
+        <ul class="post-list">
+          {% for post in paginator.posts %}
+          <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <div class="post-link">
+                <h3>
+                    <a href="{{ post.url | relative_url }}">
+                          {{ post.title | escape }}
+                    </a>
+                </h3>
+                <time>{{ post.date | date: date_format }}</time>
+            </div>
+          </li>
+          {%- endfor -%}
+        </ul>
+        <hr />
+        <div class="postlist-footer">
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path }}" class="pagination-previous with-icon">
+                        <i class="material-icons">chevron_left</i>
+                    </a>
+                {% endif %}
+                <span class="page_number ">
+                    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                </span>
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path }}" class="pagination-next with-icon">
+                        <i class="material-icons">chevron_right</i>
+                    </a>
+                {% endif %}
+            </div>
+            <a href="{{ "/feed.xml" | relative_url }}" title="Subscribe via RSS" class="with-icon">
+                <i class="material-icons">rss_feed</i>
+                <span>Subscribe via RSS</span>
+            </a>
+        </div>
+    </div>
+</article>

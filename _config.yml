@@ -1,0 +1,41 @@
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "/articles/:num/"
+
+# Template Settings
+baseurl: ""
+
+# SEO Settings
+url: "https://dkrichards.com"
+title: Keith Richards
+description: >-
+  I am a software engineer, v0 climber, former Marine, and consummate bro.
+
+logo: /assets/favicon.png
+
+author:
+  twitter: dkrichards86
+
+twitter:
+  username: dkrichards86
+  card: summary
+
+social:
+  name: Keith Richards
+  links:
+    - https://github.com/dkrichards86
+    - https://twitter.com/dkrichards86
+    - https://www.linkedin.com/in/dkrichards/
+
+google_analytics: UA-75771301-1
+google_site_verification: fnpgLVltsohkYzvnefmzpg2HmxFbP_88Nak73roWUZs
