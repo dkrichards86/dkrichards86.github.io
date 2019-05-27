@@ -4,13 +4,10 @@ header {
     z-index: 10;
     background-color: $primary-color;
     text-align: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    line-height: 64px;
-    padding: 0 32px;
+    
+    .content {
+        padding: .25rem 2rem;
+    }
 
     @include media-query($on-tablet) {
         text-align: center;
@@ -29,13 +26,4 @@ header {
         vertical-align: middle;
         font-family: 'Roboto', sans-serif;
     }
-
-    &.shrunk {
-        height: 48px;
-        line-height: 48px;
-    }
-
-    @include media-query($on-mobile) {
-        box-shadow: $box-shadow;
-    }    
 }

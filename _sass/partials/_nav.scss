@@ -6,16 +6,11 @@ nav {
     z-index: 2;
     box-sizing: border-box;
     background-color: $content-color;
-    position: fixed;
-    top: 64px;
-    left: 0;
-    right: 0;
-    height: 42px;
-    line-height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: $box-shadow;
+    padding: .25rem 2rem;
     
     a {
         width: auto;
@@ -38,10 +33,6 @@ nav {
     }
     
     @include media-query($on-mobile) {
-        top: auto;
-        bottom: 0;
-        box-shadow: none;
-        border-top: $border;
         justify-content: space-around;
         
         a {

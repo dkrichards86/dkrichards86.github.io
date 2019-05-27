@@ -37,5 +37,11 @@ social:
     - https://twitter.com/dkrichards86
     - https://www.linkedin.com/in/dkrichards/
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/dkrichards_square.jpg
+
 google_analytics: UA-75771301-1
 google_site_verification: fnpgLVltsohkYzvnefmzpg2HmxFbP_88Nak73roWUZs
