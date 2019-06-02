@@ -2,7 +2,7 @@
 layout: post
 title:  "My Journey part 1 - The Beginning (pre-2005)"
 description: >-
-    Learn more about my shit.
+    Learn more about the early career of Keith Richards.
 ---
 
 Growing up, I was always surrounded by computers. My father studied electronics
