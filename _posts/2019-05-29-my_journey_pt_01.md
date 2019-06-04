@@ -2,7 +2,8 @@
 layout: post
 title:  "My Journey part 1 - The Beginning (pre-2005)"
 description: >-
-    Learn more about the early career of Keith Richards.
+    In this article, I talk about my early exposure to computers, and discuss how
+    this exposure helped spark my curiosity and eventually my career.
 ---
 
 Growing up, I was always surrounded by computers. My father studied electronics
@@ -55,9 +56,3 @@ While making a subjective ranking site may sound childish and naive (rightfully 
 it was the catlyst to my career. Without it, I may not be who I am and where I am
 today. Beyond learning syntax and structure that summer, I also learned I was
 passionate about making things. I found my calling that summer.
-
----
-
-_This is the first part of a 5 part series of my career journey._
-
-**Part 1** \| Part 2 \| Part 3 \| Part 4 \| Part 5
