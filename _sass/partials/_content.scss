@@ -80,6 +80,18 @@ ul.post-list {
             font-size: 1.125rem;
             margin: 0;
         }
+        
+        h4 {
+            margin: 0;
+            font-weight: 400;
+            font-style: italic;
+        }
+        
+        ul {
+            li {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
