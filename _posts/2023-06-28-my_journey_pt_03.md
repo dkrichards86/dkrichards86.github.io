@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "My Journey part 3 - The Lull (2010 to 2015)"
-image: /assets/images/articles/my-journey-3_01.jpg
+title: "My Journey part 3 - The Lull (2010 to 2015)"
 description: >-
-    In this article, I talk about my Marine Corps career and it's impact on my life,
-    as well as how my role as an interpreter helped reignite my software career.
+  In this article, I talk about my Marine Corps career and it's impact on my life,
+  as well as how my role as an interpreter helped reignite my software career.
 ---
 
 In 2008, the United States entered the great recession. Shady mortgage practices

@@ -1,17 +1,24 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="content-core">
-        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = "%b %-d, %Y" -%}
-            {{ page.date | date: date_format }}
-        </time>
-        <hr />
-        <div itemprop="articleBody" class="article-body">
-            {{ content }}
-        </div>
-        <ahref="{{ page.url | relative_url }}" hidden></a>
-    </div>
+
+<article
+  class="box article h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <div class="content-core e-content">
+    <h1 itemprop="name headline" class="p-name">{{ page.title | escape }}</h1>
+    <time
+      datetime="{{ page.date | date_to_xmlschema }}"
+      itemprop="datePublished"
+      class="dt-published"
+    >
+      {%- assign date_format = "%b %-d, %Y" -%} {{ page.date | date: date_format
+      }}
+    </time>
+    <hr />
+    <div itemprop="articleBody" class="article-body">{{ content }}</div>
+    <a href="{{ page.url | relative_url }}" hidden></a>
+  </div>
 </article>

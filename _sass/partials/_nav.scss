@@ -11,7 +11,7 @@ nav {
     align-items: center;
     box-shadow: $box-shadow;
     padding: .25rem 2rem;
-    
+
     a {
         width: auto;
         box-sizing: border-box;
@@ -31,7 +31,7 @@ nav {
             padding: 4px;
         }
     }
-    
+
     @include media-query($on-mobile) {
         justify-content: space-around;
         

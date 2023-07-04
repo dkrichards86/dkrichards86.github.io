@@ -11,23 +11,23 @@ body {
     color: $font-color;
     line-height: 1.6;
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
 main {
-    padding: 32px;
+    padding: 2rem;
     display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
   
     @include media-query($on-tablet) {
-        padding: 24px;
+        padding: 1.5rem;
     }
     
      @include media-query($on-mobile) {
-        padding: 12px;
+        padding: 1rem;
     }  
 }
 
