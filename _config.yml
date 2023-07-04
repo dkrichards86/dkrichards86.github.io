@@ -11,8 +11,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-paginate: 8
-paginate_path: "/articles/:num/"
+paginate: 10
 
 # Template Settings
 baseurl: ""
@@ -21,22 +20,18 @@ baseurl: ""
 url: "https://dkrichards.com"
 title: Keith Richards
 description: >-
-  I am a software engineer, v0 climber, former Marine, and consummate bro.
+  I am a dad in perpetual training, a curious software engineer, a Marine Corps veteran, and a consummate bro.
 
 logo: /assets/favicon.png
 
 author:
-  twitter: dkrichards86
-
-twitter:
-  username: dkrichards86
-  card: summary
+  linkedin: dkrichards86
+  github: dkrichards86
 
 social:
   name: Keith Richards
   links:
     - https://github.com/dkrichards86
-    - https://twitter.com/dkrichards86
     - https://www.linkedin.com/in/dkrichards/
 
 defaults:

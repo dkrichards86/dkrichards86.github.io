@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<div class="box h-card card">
+    <div class="card-image u-photo">
+        <img src="/assets/images/dkrichards_square.jpg" alt="" />
+    </div>
+    <div class="card-content">
+        <h2 class="p-name">Keith Richards</h2>
+        <p>
+            I am a dad in perpetual training, a curious software engineer, a Marine Corps veteran, and a consummate bro.
+        </p>
+
+        <div class="social-links">
+            <a
+                href="https://github.com/dkrichards86"
+                target="_blank"
+                title="Follow me out on GitHub"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="/assets/images/github_min.png"
+                    alt="dkrichards86 on GitHub"
+                />
+            </a>
+            <a
+                href="https://www.linkedin.com/in/dkrichards/"
+                target="_blank"
+                title="Connect with me on LinkedIn"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="/assets/images/linkedin_min.png"
+                    alt="Connect with me on LinkedIn"
+                />
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="box article" >
+    <div class="content-core">
+        <h2>
+            Recent Articles
+        </h2>
+        <hr />
+        <div class="post-list">
+            {% for post in paginator.posts %}
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <article class="post-link h-entry">
+                <h3>
+                    <a href="{{ post.url | relative_url }}" class="p-name">
+                        {{ post.title | escape }}
+                    </a>
+                </h3>
+                <time class="dt-published">{{ post.date | date: date_format }}</time>
+            </article>
+            {%- endfor -%}
+            <hr />
+            <div class="postlist-footer">
+                <div class="pagination">
+                    {% if paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path }}" class="pagination-previous with-icon">
+                            <i class="material-icons">chevron_left</i>
+                        </a>
+                    {% endif %}
+                    <span class="page_number ">
+                        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                    </span>
+                    {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path }}" class="pagination-next with-icon">
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    {% endif %}
+                </div>
+                <a href="{{ "/feed.xml" | relative_url }}" title="Subscribe via RSS" class="with-icon">
+                    <i class="material-icons">rss_feed</i>
+                    <span>Subscribe via RSS</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

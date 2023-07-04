@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "My Journey part 4 - The Present (2015 to Present)"
-image: /assets/images/articles/my-journey-4_01.png
+title: "My Journey part 4 - Early Career (2015 to 2018)"
 description: >-
-    In this article, I review my career progression from junior developer to
-    prsent, talking about some of the fun things I've seen and done along the way.
+  In this article, I review my career progression from junior developer to
+  prsent, talking about some of the fun things I've seen and done along the way.
 ---
 
 In the spring of 2015, I found myself moving to a new city to embark on a new
@@ -57,7 +56,7 @@ application feature development. It was a great experience, really helping to
 improve both my Python and JavaScript skillset, as well as refining soft skills
 like time and project management.
 
-![Headshot of Keith Richards in Marine Corps dress uniform](/assets/images/articles/my-journey-4_01.png){:class="img-embedded float-right"}
+![Professional headshot of Keith Richards](/assets/images/articles/my-journey-4_01.png){:class="img-embedded float-right"}
 Around this same time, I began seeing my inbox fill with recruiters looking to
 fill positions. I no longer considered myself a junior developer, and began
 entertaining the requests. It wasn’t long before I found myself transitioning
@@ -81,7 +80,3 @@ During my tenure at the non-profit, I was also able to complete both by Bachelor
 of Science in Information Technology (specializing in software engineering) and
 a Masters of Business Administration (focused on information technology management).
 It was a busy two years!
-
-That brings us to the present. I recently transitioned to a new role as a software
-engineer with a company making software to improve the quality of public transit.
-You’ll have to check back a little later to learn about the new chapter of my career! 

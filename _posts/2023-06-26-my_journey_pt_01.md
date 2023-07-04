@@ -1,28 +1,27 @@
 ---
 layout: post
-title:  "My Journey part 1 - The Beginning (pre-2005)"
+title: "My Journey part 1 - The Beginning (pre-2005)"
 description: >-
-    In this article, I talk about my early exposure to computers, and discuss how
-    this exposure helped spark my curiosity and eventually my career.
+  In this article, I talk about my early exposure to computers, and discuss how
+  this exposure helped spark my curiosity and eventually my career.
 ---
 
-Growing up, I was always surrounded by computers. My father studied electronics
-at a tech school in the '80s and was always fascinated by it. Along the way, he
-began tinkering with computers and systems administration. I remember the "servers"
-in our spare bedroom, serving a [Bulletin Board System](https://en.wikipedia.org/wiki/Bulletin_board_system){:target="_blank"}.
+Growing up, I was always surrounded by computers. My dad studied electronics at a tech school in the
+'80s and was always fascinated by it. Along the way, he began tinkering with computers and systems
+administration. I remember the "servers" in our spare bedroom, serving a
+[Bulletin Board System](https://en.wikipedia.org/wiki/Bulletin_board_system){:target="\_blank"}.
 
-In retrospect, his BBS was a precursor to a lot of the social networks on which
-we rely today. There was a strong sense of community in its users; I remember a BBS
-putt-putt golf meet-up one year. My dad had online friends before online friends
-became the norm. I was only 6 or 7 at the time, far too young to have any serious
-involvement in the BBS world. Without a doubt though, the strong sense of community
+In retrospect, his BBS was a precursor to a lot of the social networks we see today. There was a
+strong sense of community in its users; I remember a BBS putt-putt golf meet-up one year. My dad had
+online friends before online friends became the norm. I was only 6 or 7 at the time, far too young
+to have any serious involvement in the BBS world. Without a doubt though, the strong sense of community
 planted a seed. That seed would soon grow the thriving root system that is my career.
 
 Fast forward a few years to circa 2001. It was late in the school year, approaching
 the end of 8th grade. We were in an old computer lab filled with well-used (read: beat
 to hell) PCs running Windows 98 and Internet Explorer 4. Having finished our work early,
 my group did what any group of 8th graders in a computer lab would do- we screwed around.
-At that time,  the internet was still developing. It was text-heavy and cumbersome.
+At that time, the internet was still developing. It was text-heavy and cumbersome.
 It wasn't a lot of fun. Instead of killing time on Yahoo, we opted to draw stupid
 pictures in MS Paint. Yes, you read that correctly...
 
