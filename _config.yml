@@ -11,9 +11,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-paginate: 5
-
-future: false
+paginate: 8
 
 # Template Settings
 baseurl: ""
