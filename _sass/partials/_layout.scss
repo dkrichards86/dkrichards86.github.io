@@ -1,9 +1,5 @@
 html {
     font-size: 16px;
-
-    @include media-query($on-tablet) {
-        font-size: 14px;
-    }
 }
 
 body {
