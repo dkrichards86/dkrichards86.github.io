@@ -1,0 +1,31 @@
+{
+  "name": "dkrichards86.github.io",
+  "version": "1.0.0",
+  "description": "Personal website and blog built with Jekyll and hosted on GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run lint:markdown && npm run lint:html && npm run lint:yaml",
+    "lint:markdown": "markdownlint '**/*.md' --ignore node_modules --ignore vendor --ignore _site",
+    "lint:html": "htmlhint '**/*.html' --ignore node_modules --ignore vendor --ignore _site",
+    "lint:yaml": "node scripts/lint-yaml.js",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkrichards86/dkrichards86.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dkrichards86/dkrichards86.github.io/issues"
+  },
+  "homepage": "https://github.com/dkrichards86/dkrichards86.github.io#readme",
+  "devDependencies": {
+    "glob": "^13.0.0",
+    "htmlhint": "^1.8.0",
+    "js-yaml": "^4.1.1",
+    "markdownlint-cli": "^0.46.0"
+  }
+}

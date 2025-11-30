@@ -1,4 +1,10 @@
 _site
-_drafts
 .sass-cache
 .jekyll-metadata
+vendor/bundle
+.bundle
+
+# Node.js
+node_modules
+package-lock.json
+npm-debug.log*
