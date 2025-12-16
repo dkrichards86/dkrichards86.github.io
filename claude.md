@@ -5,6 +5,7 @@ This document provides guidance for working with this Jekyll blog repository usi
 ## Project Overview
 
 This is a Jekyll-based static site for dkrichards.com, built with:
+
 - Jekyll 3.9.3 (GitHub Pages compatible)
 - Ruby 3.1.4 (via rbenv)
 - Node.js tooling for linters
@@ -24,6 +25,7 @@ The site runs at `http://localhost:4000` with auto-regeneration enabled.
 
 1. Create a file in `_posts/` with format: `YYYY-MM-DD-title-slug.md`
 2. Add front matter:
+
    ```yaml
    ---
    layout: post
@@ -32,6 +34,7 @@ The site runs at `http://localhost:4000` with auto-regeneration enabled.
    categories: [category1, category2]
    ---
    ```
+
 3. Write content in Markdown
 4. Preview at `http://localhost:4000`
 
@@ -46,7 +49,7 @@ npm run lint:yaml         # YAML only
 
 ## Project Structure
 
-```
+```text
 .
 ├── _config.yml           # Jekyll configuration
 ├── _includes/            # Reusable components
@@ -62,7 +65,7 @@ npm run lint:yaml         # YAML only
 
 ## Key Configuration
 
-### Jekyll Config (_config.yml)
+### Jekyll Config (\_config.yml)
 
 - **Pagination**: 8 posts per page
 - **Timezone**: America/New_York
@@ -142,11 +145,13 @@ ls -1 _posts/*.md | wc -l
 ### Ruby Version Mismatch
 
 Ensure rbenv is initialized in your shell:
+
 ```bash
 eval "$(rbenv init - zsh)"
 ```
 
 Or add to `~/.zshrc`:
+
 ```bash
 command -v rbenv 1>/dev/null 2>&1 && eval "$(rbenv init - zsh)"
 ```
@@ -154,6 +159,7 @@ command -v rbenv 1>/dev/null 2>&1 && eval "$(rbenv init - zsh)"
 ### Bundle Install Fails
 
 Set local bundle path:
+
 ```bash
 bundle config set --local path 'vendor/bundle'
 bundle install
@@ -162,6 +168,7 @@ bundle install
 ### Jekyll Server Not Updating
 
 Clear cache and restart:
+
 ```bash
 bundle exec jekyll clean
 bundle exec jekyll serve
@@ -195,6 +202,7 @@ bundle exec jekyll serve
 ## SEO & Metadata
 
 The site uses `jekyll-seo-tag` plugin:
+
 - Title, description from `_config.yml`
 - Per-post overrides via front matter
 - Social media meta tags

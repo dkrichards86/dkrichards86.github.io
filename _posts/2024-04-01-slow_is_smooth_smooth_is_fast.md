@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Slow is smooth, smooth is fast"
+title: "Slow is smooth, smooth is fast"
 description: >-
-    Slow is smooth, smooth is fast is one of my favorite mantras. It is one of my guiding philosophies
-    and something I turn to regularly at work.
+  Slow is smooth, smooth is fast is one of my favorite mantras. It is one of my guiding philosophies
+  and something I turn to regularly at work.
 ---
 
 One of my favorite aphorisms is “slow is smooth, smooth is fast”. I think about it a lot. It serves
@@ -39,6 +39,7 @@ down and get it right. Rushing code out the door today increases the chance that
 revisit tomorrow. Once it is in the hands of users, any bug fixes become more urgent. Fixing them
 takes priority over other work, which means we have some lost opportunity cost. There is also a good
 chance that we’ve lost some context on the work, so fixing any problems also includes ramp up. We
-will spend more time fixing the problem than we would have spent on a more deliberate implementation.
+will spend more time fixing the problem than we would have spent on a more deliberate
+implementation.
 
 Slow down. Get it right.

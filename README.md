@@ -4,7 +4,9 @@ Personal website and blog built with Jekyll and hosted on GitHub Pages.
 
 ## About
 
-This is the source code for [dkrichards.com](https://dkrichards.com), a personal portfolio and blog featuring articles on software engineering, authentication/authorization, and other technical topics.
+This is the source code for [dkrichards.com](https://dkrichards.com), a personal portfolio and blog
+featuring articles on software engineering, authentication/authorization, and other technical
+topics.
 
 ## Prerequisites
 
@@ -15,6 +17,7 @@ This is the source code for [dkrichards.com](https://dkrichards.com), a personal
 ## Setup
 
 1. **Install Ruby via rbenv** (if not already installed):
+
    ```bash
    brew install rbenv ruby-build
    rbenv install 3.1.4
@@ -22,11 +25,13 @@ This is the source code for [dkrichards.com](https://dkrichards.com), a personal
    ```
 
 2. **Install Ruby dependencies**:
+
    ```bash
    bundle install
    ```
 
 3. **Install Node.js dependencies** (for linters):
+
    ```bash
    npm install
    ```
@@ -41,7 +46,8 @@ bundle exec jekyll serve
 
 The site will be available at `http://localhost:4000`
 
-Jekyll will automatically rebuild the site when you make changes to files. Refresh your browser to see the updates.
+Jekyll will automatically rebuild the site when you make changes to files. Refresh your browser to
+see the updates.
 
 ## Project Structure
 
@@ -58,7 +64,7 @@ Jekyll will automatically rebuild the site when you make changes to files. Refre
 
 Create a new markdown file in the `_posts/` directory with the following naming convention:
 
-```
+```text
 _posts/YYYY-MM-DD-title-of-post.md
 ```
 
@@ -71,7 +77,6 @@ title: "Your Post Title"
 date: YYYY-MM-DD HH:MM:SS -0500
 categories: [category1, category2]
 ---
-
 Your content here...
 ```
 

@@ -4,9 +4,10 @@
   "description": "Personal website and blog built with Jekyll and hosted on GitHub Pages.",
   "main": "index.js",
   "scripts": {
+    "format:markdown": "prettier --write \"_posts/**/*.md\" \"_drafts/**/*.md\" \"*.md\"",
     "lint": "npm run lint:markdown && npm run lint:html && npm run lint:yaml",
     "lint:markdown": "markdownlint '**/*.md' --ignore node_modules --ignore vendor --ignore _site",
-    "lint:html": "htmlhint '**/*.html' --ignore node_modules --ignore vendor --ignore _site",
+    "lint:html": "htmlhint '*.html' '_includes/**/*.html' '_layouts/**/*.html'",
     "lint:yaml": "node scripts/lint-yaml.js",
     "test": "npm run lint"
   },
@@ -26,6 +27,7 @@
     "glob": "^13.0.0",
     "htmlhint": "^1.8.0",
     "js-yaml": "^4.1.1",
-    "markdownlint-cli": "^0.46.0"
+    "markdownlint-cli": "^0.46.0",
+    "prettier": "^3.7.4"
   }
 }
