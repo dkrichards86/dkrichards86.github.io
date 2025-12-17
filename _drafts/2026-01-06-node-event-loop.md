@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding the Node.js Event Loop: The Heart of Asynchronous JavaScript"
+title: "Understanding the Node.js Event Loop"
 description:
   "Learn how the Node.js event loop works, its six phases, and best practices for writing efficient
   asynchronous applications without blocking performance."

@@ -5,6 +5,9 @@ kramdown:
 
 timezone: America/New_York
 
+# Future posts enabled (posts with dates in the future will be published)
+future: true
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

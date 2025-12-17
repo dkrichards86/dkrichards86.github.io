@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Text Similarity Measures: Finding the Right Tool"
+title: "Text Similarity Measures"
 description: >-
   Working on a hackathon project forced me to revisit different text similarity measures. Here's
   what I learned about picking the right approach.
