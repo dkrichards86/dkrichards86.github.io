@@ -1,0 +1,3 @@
+- Table-based testing
+- Clickhouse granules, parts and partitions
+- Pillars of observability
