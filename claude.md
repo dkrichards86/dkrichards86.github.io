@@ -38,36 +38,6 @@ The site runs at `http://localhost:4000` with auto-regeneration enabled.
 3. Write content in Markdown
 4. Preview at `http://localhost:4000`
 
-### Scheduling Posts for Future Publication
-
-This blog supports automatic scheduled publishing via GitHub Actions:
-
-1. **Create a draft** in `_drafts/` with a future date in the filename:
-   - Format: `YYYY-MM-DD-title-slug.md` (e.g., `2025-01-15-my-future-post.md`)
-   - The date in the filename determines when it will be published
-
-2. **Commit and push** the draft to the repository:
-
-   ```bash
-   git add _drafts/
-   git commit -m "Schedule post for future publication"
-   git push
-   ```
-
-3. **Automatic publishing**: A GitHub Action runs daily at 9 AM EST and:
-   - Checks all drafts with dates <= today
-   - Moves them from `_drafts/` to `_posts/`
-   - Commits and pushes the changes
-   - Triggers GitHub Pages rebuild
-
-4. **Manual publishing** (optional): Run the publish script locally:
-
-   ```bash
-   ./scripts/publish-scheduled-posts.sh
-   ```
-
-5. **Manual workflow trigger**: Run the workflow on-demand from GitHub Actions tab
-
 ### Running Linters
 
 ```bash
@@ -101,7 +71,6 @@ npm run lint:yaml         # YAML only
 - **Timezone**: America/New_York
 - **Markdown**: Kramdown with GFM
 - **Plugins**: feed, sitemap, seo-tag, paginate
-- **Future posts**: Enabled (`future: true`)
 
 ### Linter Configs
 
@@ -225,17 +194,9 @@ bundle exec jekyll serve
 
 ### Draft Posts
 
-**For unpublished drafts (no scheduled date):**
-
 1. Create in `_drafts/` without a date in the filename (e.g., `my-draft.md`)
 2. Preview with `--drafts` flag: `bundle exec jekyll serve --drafts`
-3. Move to `_posts/` with date when ready to publish
-
-**For scheduled future posts:**
-
-1. Create in `_drafts/` with a future date in the filename (e.g., `2025-01-15-title.md`)
-2. Push to GitHub - the workflow will auto-publish on the scheduled date
-3. See "Scheduling Posts for Future Publication" section above
+3. Move to `_posts/` with a date when ready to publish
 
 ## SEO & Metadata
 
