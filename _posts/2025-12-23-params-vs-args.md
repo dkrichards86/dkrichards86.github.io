@@ -3,7 +3,7 @@ layout: post
 title: "Parameters vs Arguments"
 description: >-
   Parameters and arguments are often used interchangeably, but technically they are very different.
-—
+---
 
 This one is short, but not necessarily sweet. It's a reminder to me that parameters and arguments are not interchangeable terms and do have specific meaning. I always forget the correct definitions.
 
