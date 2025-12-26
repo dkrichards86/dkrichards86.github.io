@@ -12,7 +12,7 @@ on:
     branches: ["master"]
 
   schedule:
-    - cron: '37 14 * * *'  # Daily at 10:37am EDT (2:37pm UTC)
+    - cron: '37 14 * * *'  # Daily at 9:37am EST (10:37am EDT)
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

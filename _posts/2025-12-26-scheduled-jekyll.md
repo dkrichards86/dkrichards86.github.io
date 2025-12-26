@@ -30,17 +30,18 @@ moving posts, I just extended the action to use a cron job! The new workflow loo
 1. I draft posts in `_drafts/`.
 2. I move posts to `_posts_/` with future dates in the filename, like
    `2025-12-26-scheduled-jekyll.md`.
-3. A GitHub Action runs every morning at 10:37 AM EDT. The workflow rebuilds content with dates on
-   or before today. I had to update `_config.yml` to set `future: false` to accommodate this.
+3. A GitHub Action runs every morning at 1437 UTC. The workflow rebuilds content with dates on or
+   before today. I had to update `_config.yml` to set `future: false` to accommodate this.
 
-Why 10:37 AM EDT, you ask? Everyone runs their scheduled workflows at the top of the hour. 10:37 AM
-was a random time. I'll have less compute to compete with.
+Why 1437 UTC, you ask? 14 UTC is 9 AM EST or 10 AM EDT, which felt like a reasonable hour. The 37th
+minute was a random time. Everyone runs their scheduled workflows at the top of the hour. I'll have
+less Actions compute to compete with.
 
 ## The new workflow
 
 Now when I write a post, I give it a date and push to the repo. Once we arrive at the publish date,
 the Action picks it up automatically. No manual intervention required. This approach has some
-limitations. The workflow runs once daily, so posts publish sometime after 10:37 AM EST, not at a
+limitations. The workflow runs once daily, so posts publish sometime in the morning, not at a
 specific minute. That's fine for my needs. If you need precise timing, you could run the workflow
 more frequently or adjust the cron schedule.
 
