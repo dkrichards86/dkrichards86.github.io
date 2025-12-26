@@ -37,16 +37,11 @@ was a random time. I'll have less compute to compete with.
 
 ## The new workflow
 
-Now when I write a post, I give it a date and push to the repo. On the next Tuesday, the Action
-picks it up automatically. No manual intervention required. I can write several posts throughout the
-week, and they'll all publish together on Tuesday morning.
-
-This approach has some limitations. The workflow runs once daily, so posts publish sometime after
-10:37 AM EST, not at a specific minute. That's fine for my needs. If you need precise timing, you
-could run the workflow more frequently or adjust the cron schedule.
-
-GitHub Actions minutes are free for public repositories. Private repos have usage limits, but this
-workflow is lightweight enough that it won't come close to hitting the threshold.
+Now when I write a post, I give it a date and push to the repo. Once we arrive at the publish date,
+the Action picks it up automatically. No manual intervention required. This approach has some
+limitations. The workflow runs once daily, so posts publish sometime after 10:37 AM EST, not at a
+specific minute. That's fine for my needs. If you need precise timing, you could run the workflow
+more frequently or adjust the cron schedule.
 
 One thing to keep in mind: scheduled posts sitting in `_posts/` are visible in the repo. For my case
 that's fine. I use this blog more like a public notebook than anything else. If you were to reuse
@@ -56,8 +51,8 @@ this Action, beware.
 
 I wanted CMS-style scheduling without sacrificing the simplicity of a static site generator. This
 solution leverages GitHub's infrastructure and integrates seamlessly with the GitHub Pages
-deployment workflow. The entire setup is about 100 lines of shell script and YAML configuration.
-It's a small investment, but a nice quality of life improvement.
+deployment workflow. The entire setup is about 60 lines of YAML configuration. It's a small
+investment, but a nice quality of life improvement.
 
 If you're running a Jekyll blog on GitHub Pages, this approach might work for you too. The workflow
 is straightforward and customizable. Adjust the schedule, tweak the timezone, add notifications if
