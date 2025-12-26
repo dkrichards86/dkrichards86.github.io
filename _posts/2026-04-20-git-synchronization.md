@@ -3,8 +3,8 @@ layout: post
 title: "Git Synchronization: Moving History Around"
 description: >-
   Understanding how Git moves commits between repositories helps explain why rebasing rewrites
-  history, 
-  why merge conflicts happen, and what's really going on when you push and pull.
+  history, why merge conflicts happen, and what's really going on when you push and pull.
+tags: [git, version-control, engineering]
 ---
 
 In a recent post we covered how Git stores data internally. Now let's talk about how it moves that

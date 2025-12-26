@@ -8,12 +8,24 @@ timezone: America/New_York
 future: false
 
 plugins:
+  - jekyll-archives
+  - jekyll-default-layout
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-optional-front-matter
   - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-titles-from-headings
 
 paginate: 8
+
+# Exclude Sass processing - using precompiled CSS
+exclude:
+  - _sass/
+  - assets/css/style.scss
 
 # Template Settings
 baseurl: ""
@@ -41,3 +53,14 @@ defaults:
       path: ""
     values:
       image: /assets/images/dkrichards_square.jpg
+
+jekyll-archives:
+  enabled:
+    - year
+    - tags
+  layouts:
+    year: year-archive
+    tag: tag-archive
+  permalinks:
+    year: '/archives/year/:year/'
+    tag: '/archives/tag/:name/'

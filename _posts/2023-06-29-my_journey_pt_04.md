@@ -4,6 +4,7 @@ title: "My Journey part 4 - Early Career (2015 to 2018)"
 description: >-
   In this article, I review my career progression from junior developer to prsent, talking about
   some of the fun things I've seen and done along the way.
+tags: [personal, career, software-development]
 ---
 
 In the spring of 2015, I found myself moving to a new city to embark on a new career. I was hired by

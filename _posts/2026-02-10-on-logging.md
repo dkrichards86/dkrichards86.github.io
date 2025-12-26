@@ -4,6 +4,7 @@ title: "Understanding Log Levels"
 description: >-
   Log levels are a foundational concept in observability. Understanding when to use each level,
   managing signal vs noise, and choosing the right structure helps build systems you can debug.
+tags: [observability, logging, best-practices]
 ---
 
 Logs are one of the three pillars of observability, alongside metrics and traces. They provide the

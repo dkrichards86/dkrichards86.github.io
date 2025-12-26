@@ -5,6 +5,7 @@ description: >-
   Tracing completes the observability trinity by showing you the path a request takes through your
   system. Understanding traces and spans helps you diagnose performance bottlenecks and complex
   distributed system issues.
+tags: [observability, tracing, best-practices]
 ---
 
 In recent posts we've talked about logs and metrics as two pillars of observability. Logs tell you

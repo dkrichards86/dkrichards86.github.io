@@ -4,6 +4,7 @@ title: "Cool thing I used years ago and want to remember: geohashing."
 description: >-
   Geohashing is a cool way to encode latitude and longitude into a single string for simplified
   proximity lookups.
+tags: [algorithms, geospatial, data-structures]
 ---
 
 A geohash converts lat/lon into a compact string. Instead of storing both lat and lon as independent

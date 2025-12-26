@@ -1,16 +1,14 @@
+@use "variables" as *;
+
 nav {
     text-align: center;
     white-space: nowrap;
-    overflow: hidden;
     position: relative;
     z-index: 2;
     box-sizing: border-box;
-    background-color: $content-color;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $box-shadow;
-    padding: .25rem 2rem;
 
     a {
         width: auto;

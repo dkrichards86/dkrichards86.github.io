@@ -4,6 +4,7 @@ title: "How I use LLMs"
 description: >-
   LLMs are a hot topic. In this post, I share my emerging philosophy on LLM usage in the software
   industry.
+tags: [ai, llm, engineering, best-practices]
 ---
 
 Large Language Models (LLMs) are all the rage these days. Companies like OpenAI and Anthropic are in

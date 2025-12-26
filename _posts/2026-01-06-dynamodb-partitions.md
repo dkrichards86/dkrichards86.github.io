@@ -4,6 +4,7 @@ title: "DynamoDB Hot Partitions"
 description: >-
   Hot partitions can cripple DynamoDB performance even when you have adequate provisioned capacity.
   Understanding how they form and how to prevent them is crucial for scalable applications.
+tags: [databases, dynamodb, aws, performance, scalability]
 ---
 
 I've been playing around with a prototype system that needs to store something like 2 billion

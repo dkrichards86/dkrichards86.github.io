@@ -3,6 +3,7 @@ layout: post
 title: "My Journey part 5 - Senior Dev (2019 to present)"
 description: >-
   In this article, I talk about my most recent roles.
+tags: [personal, career, software-development]
 ---
 
 In the summer of 2019, I left my position at a research institute and transitioned to a role with a

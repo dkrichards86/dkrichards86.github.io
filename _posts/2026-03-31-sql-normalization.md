@@ -5,6 +5,7 @@ description: >-
   Database normalization is the process of breaking related data into discrete, maintainable
   sections. In this article, I will explain normalization through real world examples and plain
   English.
+tags: [databases, sql, architecture]
 ---
 
 This is a repost of a post I wrote years ago (circa 2018). At the time I was working on some This

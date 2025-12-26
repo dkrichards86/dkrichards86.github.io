@@ -4,6 +4,7 @@ title: "Understanding the Node.js Event Loop"
 description:
   "Learn how the Node.js event loop works, its six phases, and best practices for writing efficient
   asynchronous applications without blocking performance."
+tags: [javascript, nodejs, performance]
 ---
 
 I'm preparing for a refactor of some legacy Node code. This code is somewhat old, and has a mix of

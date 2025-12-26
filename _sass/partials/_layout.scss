@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables" as *;
+
 html {
     font-size: 16px;
 }
@@ -65,26 +68,26 @@ table {
     margin-bottom: 2rem;
     width: 100%;
     text-align: left;
-    color: lighten($font-color, 18%);
+    color: color.scale($font-color, $lightness: 18%);
     border-collapse: collapse;
     border: 1px solid $grey-color-light;
-    
+
     tr {
         &:nth-child(even) {
-            background-color: lighten($grey-color-light, 6%);
+            background-color: color.scale($grey-color-light, $lightness: 6%);
         }
     }
-    
+
     th, td {
         padding: 0.5rem 1rem;
     }
-    
+
     th {
-        background-color: lighten($grey-color-light, 3%);
-        border: 1px solid darken($grey-color-light, 4%);
-        border-bottom-color: darken($grey-color-light, 12%);
+        background-color: color.scale($grey-color-light, $lightness: 3%);
+        border: 1px solid color.scale($grey-color-light, $lightness: -4%);
+        border-bottom-color: color.scale($grey-color-light, $lightness: -12%);
     }
-    
+
     td {
         border: 1px solid $grey-color-light;
     }
@@ -119,13 +122,5 @@ img {
 
 .pagination-previous,
 .pagination-next {
-    // padding-left: 0.75em;
-    // padding-right: 0.75em;
     white-space: nowrap;
-}
-
-.subscription {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
 }

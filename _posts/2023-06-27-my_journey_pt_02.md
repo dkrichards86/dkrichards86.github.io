@@ -4,6 +4,7 @@ title: "My Journey part 2 - Academic Aspirations (2005 to 2010)"
 description: >-
   In this article, I talk about my first shot at college, my terrible academic work ethic, and some
   side projects that were entirely too distracting.
+tags: [personal, career, education]
 ---
 
 After I graduated from high school, I did what ever honor roll student did. I went to college. I

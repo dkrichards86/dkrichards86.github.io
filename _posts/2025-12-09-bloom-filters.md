@@ -5,6 +5,7 @@ description: >-
   A Bloom filter is a probabilistic data structure that answers a simple question: "Is this item in
   my set?". They provide really fast lookups with a minimal memory footprint. They're perfect for
   filtering out items that definitely aren't there.
+tags: [algorithms, data-structures, performance]
 ---
 
 A few months ago, I gave a presentation on Bloom filters. They're one of those elegant computer

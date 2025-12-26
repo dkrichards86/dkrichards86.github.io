@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="box article" >
+  <div class="content-core">
+    <h2>Archive of posts Archive of posts with {{ page.type }} '{{ page.title }}'</h2>
+    <hr />
+    <div class="post-list">
+    <div class="post-list">
+      {% for post in page.posts %}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <article class="post-link h-entry">
+            <h3>
+                <a href="{{ post.url | relative_url }}" class="p-name">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+            <time class="dt-published">{{ post.date | date: date_format }}</time>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

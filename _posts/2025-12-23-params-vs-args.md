@@ -3,6 +3,7 @@ layout: post
 title: "Parameters vs Arguments"
 description: >-
   Parameters and arguments are often used interchangeably, but technically they are very different.
+tags: [programming, terminology]
 ---
 
 This one is short, but not necessarily sweet. It's a reminder to me that parameters and arguments

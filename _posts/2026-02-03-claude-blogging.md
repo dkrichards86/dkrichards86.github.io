@@ -4,6 +4,7 @@ title: "Writing with AI: My Process for Blog Posts"
 description: >-
   I've been using Claude to help write blog posts the same way I use AI for programming. Clear
   prompts, iterative feedback, and treating output like code review.
+tags: [ai, llm, writing, meta]
 ---
 
 I've been using Claude to help me write blog posts for a few months now. The process feels

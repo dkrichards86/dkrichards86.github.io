@@ -2,9 +2,10 @@
 layout: post
 title: "Caching Strategies"
 description: >-
-  Everyone knows caches make things faster, but the mechanics of how you interact with a cache 
-  matter more than you might think. Understanding read-through, write-around, and cache-aside 
+  Everyone knows caches make things faster, but the mechanics of how you interact with a cache
+  matter more than you might think. Understanding read-through, write-around, and cache-aside
   patterns helps you pick the right approach.
+tags: [performance, caching, architecture]
 ---
 
 Caching is one of those concepts that seems straightforward until you start implementing it. Put

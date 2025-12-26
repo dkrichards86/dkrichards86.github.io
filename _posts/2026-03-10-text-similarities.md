@@ -4,6 +4,7 @@ title: "Text Similarity Measures"
 description: >-
   Working on a hackathon project forced me to revisit different text similarity measures. Here's
   what I learned about picking the right approach.
+tags: [algorithms, nlp, data-structures]
 ---
 
 I've been hacking on a small project that needs to compare text documents and find similar ones. It

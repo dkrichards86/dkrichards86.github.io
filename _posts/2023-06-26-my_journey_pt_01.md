@@ -4,6 +4,7 @@ title: "My Journey part 1 - The Beginning (pre-2005)"
 description: >-
   In this article, I talk about my early exposure to computers, and discuss how this exposure helped
   spark my curiosity and eventually my career.
+tags: [personal, career, web-development]
 ---
 
 Growing up, I was always surrounded by computers. My dad studied electronics at a tech school in the

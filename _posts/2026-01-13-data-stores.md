@@ -4,6 +4,7 @@ title: "Categorizing data stores"
 description: >-
   Understanding the different categories of data stores and their trade-offs helps you pick the
   right tool for the job.
+tags: [databases, architecture, scalability]
 ---
 
 A data store is any repository for persistently storing and managing collections of data. This

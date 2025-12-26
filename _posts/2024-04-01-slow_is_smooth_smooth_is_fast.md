@@ -4,6 +4,7 @@ title: "Slow is smooth, smooth is fast"
 description: >-
   Slow is smooth, smooth is fast is one of my favorite mantras. It is one of my guiding philosophies
   and something I turn to regularly at work.
+tags: [philosophy, engineering, best-practices, military]
 ---
 
 One of my favorite aphorisms is “slow is smooth, smooth is fast”. I think about it a lot. It serves

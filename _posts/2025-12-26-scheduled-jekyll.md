@@ -4,6 +4,7 @@ title: "Automating scheduled posts in Jekyll"
 description: >-
   I wanted to write posts in advance and have them publish automatically. Here's how I built a
   scheduling system using GitHub Actions.
+tags: [meta, jekyll, automation, github-actions]
 ---
 
 I've been writing blog posts whenever inspiration strikes, but I wanted more control over when they

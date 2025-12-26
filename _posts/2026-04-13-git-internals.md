@@ -4,6 +4,7 @@ title: "How Git Actually Works"
 description: >-
   Git seems like magic until you understand what's happening under the hood. It's simpler than you'd
   think - just objects, references, and a clever content-addressing scheme.
+tags: [git, version-control, engineering]
 ---
 
 I've been using Git for over a decade, but I only really understood how it worked a few years ago.

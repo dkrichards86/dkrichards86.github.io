@@ -4,6 +4,7 @@ title: "Indexing DynamoDB"
 description: >-
   Indexes are how you query DynamoDB data in different ways. Understanding when to use Local vs
   Global Secondary Indexes and their trade-offs is essential for flexible data access.
+tags: [databases, dynamodb, aws, performance]
 ---
 
 DynamoDB's primary key design forces a critical decision up front: how will you access your data?

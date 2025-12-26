@@ -47,6 +47,14 @@ npm run lint:html         # HTML only
 npm run lint:yaml         # YAML only
 ```
 
+### Building CSS
+
+```bash
+npm run build:css         # Build and compress Sass to CSS
+```
+
+The CSS is built using Dart Sass 2.0 and outputs to `assets/css/bundle.css`.
+
 ## Project Structure
 
 ```text
@@ -56,7 +64,16 @@ npm run lint:yaml         # YAML only
 ├── _layouts/             # Page templates
 ├── _posts/               # Blog posts (YYYY-MM-DD-title.md)
 ├── _drafts/              # Unpublished drafts
-├── _sass/                # Sass stylesheets
+├── _sass/                # Sass stylesheets (Dart Sass 2.0)
+│   ├── style.scss        # Main entry (uses @forward)
+│   └── partials/
+│       ├── _variables.scss      # Variables, mixins, color module
+│       ├── _reset.scss          # CSS reset
+│       ├── _layout.scss         # Layout & typography
+│       ├── _header.scss         # Header & navigation
+│       ├── _nav.scss            # Navigation styles
+│       ├── _content.scss        # Content containers
+│       └── _syntax-highlighting.scss  # Code syntax styles
 ├── assets/               # Images, CSS, JS
 ├── index.html            # Homepage
 ├── 404.html              # Error page
@@ -139,6 +156,41 @@ grep -r "search term" _posts/
 ls -1 _posts/*.md | wc -l
 ```
 
+## Sass/CSS Architecture
+
+This project uses **Dart Sass 2.0** with the modern module system:
+
+### Key Concepts
+
+- **Main file**: `_sass/style.scss` uses `@forward` to re-export all partials
+- **Variables**: Centralized in `_sass/partials/_variables.scss`
+- **Module imports**: Each partial uses `@use "variables" as *;` to access variables
+- **Color functions**: Uses `color.scale()` instead of deprecated `lighten()`/`darken()`
+
+### Sass Structure
+
+```scss
+// _sass/style.scss
+@forward "partials/variables"; // Must be first
+@forward "partials/reset";
+// ... other partials
+
+// _sass/partials/_variables.scss
+@use "sass:color"; // Import color module
+$primary-color: #34495e;
+$grey-color-light: color.scale($grey-color, $lightness: 40%);
+
+// Other partials
+@use "variables" as *; // Import variables into global namespace
+```
+
+### Important Rules
+
+1. `@forward` and `@use` **must** appear before any other code
+2. Variables and mixins are in `_variables.scss`, not `style.scss`
+3. Use `color.scale()` for color manipulation, not `lighten()`/`darken()`
+4. Build with `npm run build:css` to test Sass compilation
+
 ## Common Issues
 
 ### Ruby Version Mismatch
@@ -173,6 +225,14 @@ bundle exec jekyll clean
 bundle exec jekyll serve
 ```
 
+### Sass Compilation Errors
+
+If you get Dart Sass 2.0 errors:
+
+1. Ensure `@use`/`@forward` are at the top of files
+2. Use `color.scale()` instead of `lighten()`/`darken()`
+3. Test with `npm run build:css` before running Jekyll
+
 ## Writing Tips
 
 ### Front Matter Variables
@@ -191,6 +251,13 @@ bundle exec jekyll serve
 - **Footnotes**: Kramdown syntax `[^1]`
 - **Inline HTML**: Allowed for complex formatting
 - **Liquid tags**: Jekyll template language
+- **Image styling**: Use `{:class="img-embedded float-left"}` or `float-right` for styled images
+
+Example:
+
+```markdown
+![Alt text](/path/to/image.png){:class="img-embedded float-right"}
+```
 
 ### Draft Posts
 

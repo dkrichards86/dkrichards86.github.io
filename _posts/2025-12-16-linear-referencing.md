@@ -4,6 +4,7 @@ title: "A thing to remember: Linear referencing"
 description: >-
   Linear referencing is an intuitive way to communicate distance along a fixed path. It's one of
   those cool ideas I learned a few years ago and don't want to forget.
+tags: [algorithms, geospatial, data-structures]
 ---
 
 I first encountered linear referencing at a previous job and thought it was such a clever idea. It's

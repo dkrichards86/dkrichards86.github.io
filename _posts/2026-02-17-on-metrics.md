@@ -5,6 +5,7 @@ description: >-
   Metrics are everywhere, but understanding what P90 vs P99 actually tells you about your system -
   and how aggregation windows can hide or reveal problems - makes the difference between useful
   monitoring and just pretty dashboards.
+tags: [observability, metrics, best-practices]
 ---
 
 Metrics are the foundation of observability, but they're also one of the most misunderstood parts of

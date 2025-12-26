@@ -4,6 +4,7 @@ title: "The Bus Problem"
 description: >-
   One of your engineers gets hit by a bus. Suddenly, your team is left down one employee. That
   engineer happens to hold all knowledge of core functionality. How do you respond?
+tags: [engineering, management, best-practices]
 ---
 
 Picture this. You’re the manager of a software team. The team is working on the MVP for a new SaaS

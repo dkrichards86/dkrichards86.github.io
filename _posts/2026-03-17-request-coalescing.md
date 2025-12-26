@@ -5,6 +5,7 @@ description: >-
   Cache stampede happens when multiple requests all try to rebuild the same cache entry at once.
   Request coalescing is one elegant solution that prevents wasted work and reduces load on your
   backend.
+tags: [performance, architecture, scalability]
 ---
 
 I was working on a service that used local caching for expensive database queries. Cache hits were

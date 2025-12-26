@@ -2,9 +2,10 @@
 layout: post
 title: "On Blogging"
 description: >-
-  It’s time to try my hand at blogging one more time, but this time with a fresh perspective. I want
+  It's time to try my hand at blogging one more time, but this time with a fresh perspective. I want
   to write for people, for me, rather than for search engines. I want to write about the things that
   I want to learn about or practice. I want to write so I can grow.
+tags: [meta, writing, personal]
 ---
 
 I soured on most social media a few years ago. I realized that I wasn’t gaining anything from
