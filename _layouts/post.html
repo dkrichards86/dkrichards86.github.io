@@ -17,6 +17,13 @@ layout: default
       {%- assign date_format = "%b %-d, %Y" -%} {{ page.date | date: date_format
       }}
     </time>
+    {%- if page.tags.size > 0 -%}
+    <div class="post-tags">
+      {%- for tag in page.tags -%}
+        <a href="{{ site.baseurl }}/archives/tag/{{ tag | slugify }}/" class="tag-link">{{ tag }}</a>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
     <hr />
     <div itemprop="articleBody" class="article-body">{{ content }}</div>
     <a href="{{ page.url | relative_url }}" hidden></a>

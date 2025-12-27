@@ -8,7 +8,8 @@ tags: [ai, llm, writing, meta]
 ---
 
 I've been using Claude to help me write blog posts for a few months now. The process feels
-remarkably similar to how I use AI as a programming copilot. Same principles, different domain.
+remarkably similar to how I use [AI as a programming
+copilot]({% post_url 2025/2025-11-26-how-i-use-llms %}). Same principles, different domain.
 
 When I use Claude Code for coding, I don't just accept whatever it generates. I give it clear
 requirements, review the output critically, and iterate until I get what I need. The AI is a junior
@@ -24,7 +25,9 @@ to write a blog post, I don't just say "write about Docker." I give it specific 
 I'll tell it the target audience (developers, not beginners), the tone (educational,
 conversational), and the scope (focus on practical usage, not theory). I'll specify what I want to
 avoid (don't rehash basic concepts everyone knows) and what I want to emphasize (real-world problems
-and solutions).
+and solutions). I instruct Claude to ask specific questions to clarify perspective and share
+anectodes. I also clearly instruct Claude not to invent scenarios. Everything you read in this blog
+has actually happened. It's not a hallucination.
 
 For this post, my prompt was specific. Write about using AI for writing, compare it to programming
 copilots, explain my iterative process, match my voice from previous posts. I gave Claude access to

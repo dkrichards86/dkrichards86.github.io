@@ -9,8 +9,8 @@ tags: [javascript, nodejs, performance]
 
 I'm preparing for a refactor of some legacy Node code. This code is somewhat old, and has a mix of
 older [async](https://caolan.github.io/async/v3/) callbacks and modern `async/await`. The mishmash
-of approaches carries some cognitive overhead, so we're interested in unifying it all to the modern
-format.
+of approaches carries some cognitive overhead, so my team is interested in unifying it all to the
+modern format.
 
 This service sees a fair amount of traffic. We handle close to 500M requests per day, with most
 requests concentrated in a 10 hour window. A typical hour in that window sees 35M requests. It's at

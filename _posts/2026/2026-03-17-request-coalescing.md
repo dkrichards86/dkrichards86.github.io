@@ -8,12 +8,12 @@ description: >-
 tags: [performance, architecture, scalability]
 ---
 
-I was working on a service that used local caching for expensive database queries. Cache hits were
-blazing fast at single digit milliseconds. But cache misses required network round trips to the
-database, and that's where things got ugly. During traffic spikes, we'd see hundreds of concurrent
-requests all hitting the same cache miss and flooding the database with identical queries. Response
-times would spike, and we'd have to run larger database instances to handle the surge, driving up
-costs significantly.
+A while back I was working on a service that used local caching for expensive database queries.
+Cache hits were blazing fast at single digit milliseconds. But cache misses required network round
+trips to the database, and that's where things got ugly. During traffic spikes, we'd see hundreds of
+concurrent requests all hitting the same cache miss and flooding the database with identical
+queries. Response times would spike, and we'd have to run larger database instances to handle the
+surge, driving up costs significantly.
 
 The pattern was always the same: cache miss on a popular key during peak traffic, followed by a
 stampede of duplicate database calls. All that redundant work meant we were paying for database
