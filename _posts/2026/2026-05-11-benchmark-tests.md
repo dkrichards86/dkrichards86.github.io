@@ -83,7 +83,7 @@ if the speed gain was worth the memory cost.
 Run benchmarks with `go test -bench=.` in your package directory. The output shows nanoseconds per
 operation:
 
-```
+```text
 BenchmarkGroupElements-8    10000    123456 ns/op    4096 B/op    12 allocs/op
 ```
 

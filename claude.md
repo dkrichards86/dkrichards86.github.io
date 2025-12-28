@@ -47,13 +47,9 @@ npm run lint:html         # HTML only
 npm run lint:yaml         # YAML only
 ```
 
-### Building CSS
+### Styling
 
-```bash
-npm run build:css         # Build and compress Sass to CSS
-```
-
-The CSS is built using Dart Sass 2.0 and outputs to `assets/css/bundle.css`.
+The site uses plain CSS with CSS custom properties (variables) located at `assets/css/style.css`. No build step is required - the CSS file is served directly by Jekyll.
 
 ## Project Structure
 
@@ -64,17 +60,9 @@ The CSS is built using Dart Sass 2.0 and outputs to `assets/css/bundle.css`.
 ├── _layouts/             # Page templates
 ├── _posts/               # Blog posts (YYYY-MM-DD-title.md)
 ├── _drafts/              # Unpublished drafts
-├── _sass/                # Sass stylesheets (Dart Sass 2.0)
-│   ├── style.scss        # Main entry (uses @forward)
-│   └── partials/
-│       ├── _variables.scss      # Variables, mixins, color module
-│       ├── _reset.scss          # CSS reset
-│       ├── _layout.scss         # Layout & typography
-│       ├── _header.scss         # Header & navigation
-│       ├── _nav.scss            # Navigation styles
-│       ├── _content.scss        # Content containers
-│       └── _syntax-highlighting.scss  # Code syntax styles
 ├── assets/               # Images, CSS, JS
+│   └── css/
+│       └── style.css     # Plain CSS with custom properties
 ├── index.html            # Homepage
 ├── 404.html              # Error page
 └── vendor/bundle/        # Ruby gems (git-ignored)
@@ -156,40 +144,50 @@ grep -r "search term" _posts/
 ls -1 _posts/*.md | wc -l
 ```
 
-## Sass/CSS Architecture
+## CSS Architecture
 
-This project uses **Dart Sass 2.0** with the modern module system:
+This project uses **plain CSS** with **CSS custom properties** (variables):
 
 ### Key Concepts
 
-- **Main file**: `_sass/style.scss` uses `@forward` to re-export all partials
-- **Variables**: Centralized in `_sass/partials/_variables.scss`
-- **Module imports**: Each partial uses `@use "variables" as *;` to access variables
-- **Color functions**: Uses `color.scale()` instead of deprecated `lighten()`/`darken()`
+- **Single file**: All styles are in `assets/css/style.css`
+- **CSS Variables**: Defined in `:root` selector at the top of the file
+- **No build step**: Jekyll serves the CSS file directly
+- **Modern CSS**: Uses CSS custom properties, media queries, and standard selectors
 
-### Sass Structure
+### CSS Structure
 
-```scss
-// _sass/style.scss
-@forward "partials/variables"; // Must be first
-@forward "partials/reset";
-// ... other partials
+```css
+:root {
+  /* Colors */
+  --primary-color: #34495E;
+  --content-color: #FFFFFF;
+  --background-color: #F0F0F0;
+  --font-color: #454545;
 
-// _sass/partials/_variables.scss
-@use "sass:color"; // Import color module
-$primary-color: #34495e;
-$grey-color-light: color.scale($grey-color, $lightness: 40%);
+  /* Breakpoints */
+  --on-mobile: 600px;
+  --on-tablet: 800px;
+}
 
-// Other partials
-@use "variables" as *; // Import variables into global namespace
+/* Use variables with var() */
+body {
+  background: var(--background-color);
+  color: var(--font-color);
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  /* Mobile styles */
+}
 ```
 
-### Important Rules
+### Editing Styles
 
-1. `@forward` and `@use` **must** appear before any other code
-2. Variables and mixins are in `_variables.scss`, not `style.scss`
-3. Use `color.scale()` for color manipulation, not `lighten()`/`darken()`
-4. Build with `npm run build:css` to test Sass compilation
+1. Edit `assets/css/style.css` directly
+2. Use CSS custom properties for colors, spacing, etc.
+3. Changes are picked up automatically by Jekyll's auto-regeneration
+4. No build step required
 
 ## Common Issues
 
@@ -224,14 +222,6 @@ Clear cache and restart:
 bundle exec jekyll clean
 bundle exec jekyll serve
 ```
-
-### Sass Compilation Errors
-
-If you get Dart Sass 2.0 errors:
-
-1. Ensure `@use`/`@forward` are at the top of files
-2. Use `color.scale()` instead of `lighten()`/`darken()`
-3. Test with `npm run build:css` before running Jekyll
 
 ## Writing Tips
 
@@ -277,7 +267,7 @@ The site uses `jekyll-seo-tag` plugin:
 ## Performance Notes
 
 - Images in `assets/images/` should be optimized
-- Sass compiled to CSS automatically
+- CSS is served directly (no compilation needed)
 - GitHub Pages serves with CDN
 - RSS feed auto-generated at `/feed.xml`
 

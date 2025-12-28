@@ -4,15 +4,11 @@
   "description": "Personal website and blog built with Jekyll and hosted on GitHub Pages.",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass _sass/style.scss:assets/css/bundle.css --style=compressed --no-source-map",
     "format:markdown": "prettier --write \"_posts/**/*.md\" \"_drafts/**/*.md\" \"*.md\"",
     "lint": "npm run lint:markdown && npm run lint:html && npm run lint:yaml",
     "lint:markdown": "markdownlint '**/*.md' --ignore node_modules --ignore vendor --ignore _site",
     "lint:html": "htmlhint '*.html' '_includes/**/*.html' '_layouts/**/*.html'",
-    "lint:yaml": "node scripts/lint-yaml.js",
-    "serve": "bundle exec jekyll serve",
-    "serve:future": "bundle exec jekyll serve --future",
-    "test": "npm run lint"
+    "lint:yaml": "node scripts/lint-yaml.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +27,6 @@
     "htmlhint": "^1.8.0",
     "js-yaml": "^4.1.1",
     "markdownlint-cli": "^0.46.0",
-    "prettier": "^3.7.4",
-    "sass": "^1.97.1"
+    "prettier": "^3.7.4"
   }
 }

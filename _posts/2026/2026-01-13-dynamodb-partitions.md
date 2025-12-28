@@ -30,7 +30,7 @@ The partition count is determined by two factors: storage and throughput. Dynamo
 partitions to ensure that each partition stores no more than 10 GB of data and can handle the
 required read/write capacity. The formula is roughly:
 
-```
+```text
 Partitions needed = MAX(
   Table size in GB / 10,
   (RCU needed / 3000) + (WCU needed / 1000)

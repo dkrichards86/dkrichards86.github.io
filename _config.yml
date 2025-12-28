@@ -23,8 +23,6 @@ plugins:
 paginate: 8
 
 exclude:
-  - _sass/
-  - assets/css/style.scss
   - claude.md
 
 # Template Settings
