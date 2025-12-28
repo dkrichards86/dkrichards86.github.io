@@ -22,10 +22,10 @@ plugins:
 
 paginate: 8
 
-# Exclude Sass processing - using precompiled CSS
 exclude:
   - _sass/
   - assets/css/style.scss
+  - claude.md
 
 # Template Settings
 baseurl: ""
