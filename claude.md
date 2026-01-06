@@ -49,7 +49,8 @@ npm run lint:yaml         # YAML only
 
 ### Styling
 
-The site uses plain CSS with CSS custom properties (variables) located at `assets/css/style.css`. No build step is required - the CSS file is served directly by Jekyll.
+The site uses plain CSS with CSS custom properties (variables) located at `assets/css/style.css`. No
+build step is required - the CSS file is served directly by Jekyll.
 
 ## Project Structure
 
@@ -160,9 +161,9 @@ This project uses **plain CSS** with **CSS custom properties** (variables):
 ```css
 :root {
   /* Colors */
-  --primary-color: #34495E;
-  --content-color: #FFFFFF;
-  --background-color: #F0F0F0;
+  --primary-color: #34495e;
+  --content-color: #ffffff;
+  --background-color: #f0f0f0;
   --font-color: #454545;
 
   /* Breakpoints */
