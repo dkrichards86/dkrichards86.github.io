@@ -4,7 +4,7 @@
   "description": "Personal website and blog built with Jekyll and hosted on GitHub Pages.",
   "main": "index.js",
   "scripts": {
-    "format:markdown": "prettier --write \"_posts/**/*.md\" \"_drafts/**/*.md\" \"*.md\"",
+    "format:markdown": "prettier --write \"_posts/**/*.md\"",
     "lint": "npm run lint:markdown && npm run lint:html && npm run lint:yaml",
     "lint:markdown": "markdownlint '**/*.md' --ignore node_modules --ignore vendor --ignore _site",
     "lint:html": "htmlhint '*.html' '_includes/**/*.html' '_layouts/**/*.html'",
