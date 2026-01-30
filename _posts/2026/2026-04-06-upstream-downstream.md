@@ -7,9 +7,9 @@ description: >-
 tags: [microservices, architecture, terminology]
 ---
 
-Which is which? Every single time someone says "upstream service" in a meeting, I have to
-pause and reconstruct the mental model. Is upstream the service I'm calling, or the one calling me?
-I should know this, but I always forget.
+Which is which? Every single time someone says "upstream service" in a meeting, I have to pause and
+reconstruct the mental model. Is upstream the service I'm calling, or the one calling me? I should
+know this, but I always forget.
 
 This isn't just me. I've watched senior engineers stumble over this terminology. The terms come from
 manufacturing and logistics where they make intuitive sense. In software, especially microservices,
