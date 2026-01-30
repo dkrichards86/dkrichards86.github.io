@@ -58,9 +58,7 @@ you give three:
 
 Then you calculate the expected time using a weighted formula:
 
-```
-Expected Time = (Optimistic + 4×Most Likely + Pessimistic) / 6
-```
+`Expected Time = (Optimistic + 4×Most Likely + Pessimistic) / 6`
 
 The formula weights the most likely case heavily while accounting for both extremes. It's
 essentially creating a probability distribution for your estimate. Since PERT is just simple
