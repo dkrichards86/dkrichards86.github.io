@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npm run lint:yaml:*)",
       "Bash(cat:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(grep:*)",
+      "Bash(npm run lint:markdown:*)"
     ],
     "deny": [],
     "ask": []

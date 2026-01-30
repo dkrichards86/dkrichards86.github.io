@@ -92,6 +92,7 @@ Create a researched Jekyll blog post that matches the blog's voice and style.
     - Execute: `npm run lint:yaml`
     - If linting fails, fix issues and re-run
     - Don't report completion until linting passes
+    - Execute: `npm run format:markdown`
 
 10. **Report completion**:
    - Show the file path as a clickable link
