@@ -8,7 +8,7 @@ tags: [git, version-control, engineering]
 ---
 
 In a recent post we covered how [Git stores data
-internally]({% post_url 2026/2026-04-13-git-internals %}). Now let's talk about how it moves that
+internally]({% post_url 2026/2026-03-12-git-internals %}). Now let's talk about how it moves that
 data around. Git synchronization is really about copying objects and updating references between
 repositories. Understanding this helps explain why some Git operations can be destructive and others
 are safe.
